@@ -29,7 +29,7 @@ python -m venv ~/Desktop/yolo-coco-project/
 source ~/Desktop/yolo-coco-project/Scripts/activate
 
 
-#가상환경에 필요 라이브러리 다운로드
+# 가상환경에 필요 라이브러리 다운로드
 ```
 pip3 install torch torchvision torchaudio
 pip install ultralytics
