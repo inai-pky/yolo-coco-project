@@ -38,9 +38,11 @@ pip3 install torch torchvision torchaudio
 pip install ultralytics
 pip install opencv-python
 ```
+user-script 폴더 생성
+
 
 ## 라이브러리 설치 확인 코드 
-check.py 로 저장
+파일명 check.py 로  user-script에 저장
 ```python
 import torch
 import cv2
@@ -59,7 +61,7 @@ print("\nAll good! Your environment is ready.")
 python check.py
 ```
 ## 실행코드
-main.py 로 저장
+파일명 main.py 로 user-script에 저장
 ```python
 # 1. 라이브러리 임포트
 from ultralytics import YOLO
