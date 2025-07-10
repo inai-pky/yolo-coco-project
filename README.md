@@ -30,11 +30,12 @@ source ~/Desktop/yolo-coco-project/Scripts/activate
 
 
 가상환경에 필요 라이브러리 다운로드 <br />
+```
 pip3 install torch torchvision torchaudio
 pip install ultralytics
 pip install opencv-python
-
-'''p
+```
+```
 import torch
 import cv2
 import ultralytics
@@ -46,4 +47,4 @@ print(f"OpenCV version: {cv2.__version__}")
 print(f"Ultralytics YOLO version: {ultralytics.__version__}")
 
 print("\nAll good! Your environment is ready.")
-'''
+```
