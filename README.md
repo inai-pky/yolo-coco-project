@@ -19,15 +19,18 @@ https://git-scm.com/downloads
 
 바탕화면에 "yolo-coco-project" 파일 생성
 <br />
-gitbash 실행 후 생성한 파일로 이렉토리 이동 <br />
+gitbash 실행 후 생성한 파일로 이렉토리 이동
+```
 cd /Desktop/yolo-coco-project
-
-디렉토리 이동 후 파이썬 가상환경 설정 <br />
+```
+디렉토리 이동 후 파이썬 가상환경 설정
+```
 python -m venv ~/Desktop/yolo-coco-project/
-
+```
 가상환경 실행
+```
 source ~/Desktop/yolo-coco-project/Scripts/activate
-
+```
 
 # 가상환경에 필요 라이브러리 다운로드
 ```
