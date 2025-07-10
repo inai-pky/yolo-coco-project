@@ -41,7 +41,7 @@ pip install opencv-python
 
 # 라이브러리 설치 확인 코드 
 check.py 로 저장
-```
+```python
 import torch
 import cv2
 import ultralytics
