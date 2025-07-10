@@ -1,5 +1,5 @@
-# yolo-coco-project
-
+## yolo-coco-project
+# 필요 프로그램 설치
 python install <br />
 https://www.python.org/downloads/release/python-3135/ <br />
 "Add python.exe to PATH" 옵션을 반드시 체크하세요.
@@ -29,7 +29,7 @@ python -m venv ~/Desktop/yolo-coco-project/
 source ~/Desktop/yolo-coco-project/Scripts/activate
 
 
-가상환경에 필요 라이브러리 다운로드 <br />
+#가상환경에 필요 라이브러리 다운로드
 ```
 pip3 install torch torchvision torchaudio
 pip install ultralytics
