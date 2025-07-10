@@ -1,5 +1,5 @@
-## yolo-coco-project
-# 필요 프로그램 설치
+# yolo-coco-project
+## 필요 프로그램 설치
 python install <br />
 https://www.python.org/downloads/release/python-3135/ <br />
 "Add python.exe to PATH" 옵션을 반드시 체크하세요.
@@ -20,26 +20,26 @@ https://git-scm.com/downloads
 바탕화면에 "yolo-coco-project" 파일 생성
 <br />
 gitbash 실행 후 생성한 파일로 이렉토리 이동
-```
+```bash
 cd /Desktop/yolo-coco-project
 ```
 디렉토리 이동 후 파이썬 가상환경 설정
-```
+```bash
 python -m venv ~/Desktop/yolo-coco-project/
 ```
 가상환경 실행
-```
+```bash
 source ~/Desktop/yolo-coco-project/Scripts/activate
 ```
 
-# 가상환경에 필요 라이브러리 다운로드
+## 가상환경에 필요 라이브러리 다운로드
 ```
 pip3 install torch torchvision torchaudio
 pip install ultralytics
 pip install opencv-python
 ```
 
-# 라이브러리 설치 확인 코드 
+## 라이브러리 설치 확인 코드 
 check.py 로 저장
 ```python
 import torch
