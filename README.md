@@ -34,7 +34,7 @@ pip3 install torch torchvision torchaudio
 pip install ultralytics
 pip install opencv-python
 
-'''pthon
+'''p
 import torch
 import cv2
 import ultralytics
@@ -46,3 +46,4 @@ print(f"OpenCV version: {cv2.__version__}")
 print(f"Ultralytics YOLO version: {ultralytics.__version__}")
 
 print("\nAll good! Your environment is ready.")
+'''
