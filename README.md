@@ -6,6 +6,8 @@ https://www.python.org/downloads/release/python-3135/ <br />
 
 VScode install <br />
 https://code.visualstudio.com/
+<br />
+python, c++ install
 
 VScode setup install <br />
 https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false
@@ -15,7 +17,32 @@ https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=C
 git bash install <br />
 https://git-scm.com/downloads
 
+바탕화면에 "yolo-coco-project" 파일 생성
+<br />
+gitbash 실행 후 생성한 파일로 이렉토리 이동 <br />
+cd /Desktop/yolo-coco-project
+
+디렉토리 이동 후 파이썬 가상환경 설정 <br />
+python -m venv ~/Desktop/yolo-coco-project/
+
+가상환경 실행
+source ~/Desktop/yolo-coco-project/Scripts/activate
 
 
-pytorch install <br />
-https://pytorch.org/get-started/locally/
+가상환경에 필요 라이브러리 다운로드 <br />
+pip3 install torch torchvision torchaudio
+pip install ultralytics
+pip install opencv-python
+
+'''pthon
+import torch
+import cv2
+import ultralytics
+
+print(f"PyTorch version: {torch.__version__}")
+# CPU 버전을 설치했으므로 False가 나와야 정상입니다.
+print(f"Is CUDA available: {torch.cuda.is_available()}")
+print(f"OpenCV version: {cv2.__version__}")
+print(f"Ultralytics YOLO version: {ultralytics.__version__}")
+
+print("\nAll good! Your environment is ready.")
