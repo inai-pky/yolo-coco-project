@@ -19,7 +19,7 @@ https://git-scm.com/downloads
 
 바탕화면에 "yolo-coco-project" 파일 생성
 <br />
-gitbash 실행 후 생성한 파일로 이렉토리 이동
+gitbash 실행 후 생성한 파일로 디렉토리 이동
 ```bash
 cd /Desktop/yolo-coco-project
 ```
