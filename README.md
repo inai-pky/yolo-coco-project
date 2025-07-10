@@ -33,7 +33,7 @@ source ~/Desktop/yolo-coco-project/Scripts/activate
 ```
 
 ## 가상환경에 필요 라이브러리 다운로드
-```
+```bash
 pip3 install torch torchvision torchaudio
 pip install ultralytics
 pip install opencv-python
@@ -53,4 +53,61 @@ print(f"OpenCV version: {cv2.__version__}")
 print(f"Ultralytics YOLO version: {ultralytics.__version__}")
 
 print("\nAll good! Your environment is ready.")
+```
+아래 명령어를 프롬포트에 입력하여 코드를 실행
+```bash
+python check.py
+```
+## 실행코드
+main.py 로 저장
+```python
+# 1. 라이브러리 임포트
+from ultralytics import YOLO
+import cv2
+
+# 2. 모델 로드
+model = YOLO('yolov8n.pt')
+
+# 3. 웹캠 초기화
+cap = cv2.VideoCapture(0)
+
+if not cap.isOpened():
+    print("Error: Could not open webcam.")
+    exit()
+
+# 💻 사용자가 조절 가능한 창 생성
+window_name = "YOLOv8 Live Object Detection"
+# cv2.WINDOW_NORMAL: 사용자가 창 크기를 조절할 수 있게 함
+cv2.namedWindow(window_name, cv2.WINDOW_NORMAL) 
+
+# 아래 라인을 삭제 또는 주석 처리하여 사용자가 직접 창을 조절하게 합니다.
+# cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+
+# 4. 메인 반복문
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        print("Error: Failed to capture frame.")
+        break
+
+    # 5. 프레임에서 객체 탐지 수행
+    results = model(frame)
+
+    # 6. 결과 시각화
+    annotated_frame = results[0].plot()
+
+    # 7. 화면에 프레임 표시
+    cv2.imshow(window_name, annotated_frame)
+
+    # 8. 'q' 키를 누르면 반복문 종료
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# 9. 자원 해제
+cap.release()
+cv2.destroyAllWindows()
+```
+아래 코드로 메인코드 실행
+```bash
+python main.py
 ```
