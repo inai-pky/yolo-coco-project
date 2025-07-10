@@ -1,7 +1,7 @@
 # yolo-coco-project
 
 python install
-https://www.python.org/downloads/release/python-3135/
+https://www.python.org/downloads/release/python-3135/ \n
 "Add python.exe to PATH" 옵션을 반드시 체크하세요.
 
 VScode install
