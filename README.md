@@ -21,7 +21,7 @@ https://git-scm.com/downloads
 <br />
 gitbash 실행 후 생성한 파일로 디렉토리 이동
 ```bash
-cd /Desktop/yolo-coco-project
+cd ~/Desktop/yolo-coco-project
 ```
 디렉토리 이동 후 파이썬 가상환경 설정
 ```bash
