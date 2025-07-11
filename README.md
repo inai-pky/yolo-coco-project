@@ -7,7 +7,7 @@ https://www.python.org/downloads/release/python-3135/ <br />
 VScode install <br />
 https://code.visualstudio.com/
 <br />
-python, c++ install
+python, c++, cmaketool install
 
 VScode setup install <br />
 https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false
